@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
-  resources :donations
-  resources :beneficiaries
-  resources :charities
-  resources :donors
-  resources :admins
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  # resources :donations
+  # resources :beneficiaries
+  # resources :charities
+  # resources :donors
+  # resources :admins
+  get '/admin', to:"admins#index"
+post '/admin/register', to: "admins#create"
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+post '/admin/login', to: "admins#login"
+
+delete '/admin/logout', to: "admins#logout"
 end
