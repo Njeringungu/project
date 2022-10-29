@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # resources :admins
 
  resources :beneficiaries, only: [:index, :create]
-
+# resources :charities
 get '/admin', to:"admins#index"
 post '/admin/register', to: "admins#create"
 
@@ -14,7 +14,7 @@ post '/admin/login', to: "admins#login"
 
 delete '/admin/logout', to: "admins#logout"
 
-# Donor
+Donor
 get '/donor', to:"donors#index"
 post '/donor/register', to: "donors#create"
 post '/donor/login', to: 'donors#login'
