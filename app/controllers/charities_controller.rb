@@ -1,7 +1,7 @@
 class CharitiesController < ApplicationController
 
-   before_action :authorize_charity
-skip_before_action :authorize_charity, only: [:create, :index]
+#    before_action :authorize_charity
+# skip_before_action :authorize_charity, only: [:create, :index]
 
 
 
@@ -59,6 +59,9 @@ end
     
         render json: Charity.all
     end
+
+
+
  def logout
     session.delete(:email)
     render json: {
@@ -70,4 +73,5 @@ end
    def charity_params
        params.permit(:email, :password, :name, :description, :amount_donated, :target_amount)
    end
+  
 end

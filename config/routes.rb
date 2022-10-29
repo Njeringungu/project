@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :forms
   # resources :donations
   # resources :beneficiaries
   # resources :charities
@@ -26,6 +27,13 @@ get '/charity', to:"charities#index"
 
 post '/charity/register', to: "charities#create"
 post '/charity/login', to: 'charities#login'
-
+post '/charity/application', to: "charities#application"
 delete '/charity/logout', to: "charities#logout"
+
+# application form
+# resources :forms, only: [:index, :create, :update, :show]
+get '/forms/:id', to: 'forms#show'
+put '/forms/:id', to: 'forms#update'
+post '/forms', to: "forms#create"
+get '/forms', to: "forms#index"
 end
