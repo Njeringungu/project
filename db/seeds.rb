@@ -11,9 +11,9 @@ charities1 = Charity.create(
     name: "Maji Safi Foundation",
     description: "We address the urgency of clean, safe water for the communities we serve.  Within 1 month of your donation, thousands of students will have access to safe water - perhaps for the first time in their lives.",
     amount_donated: 1100000.54,
-    category: "water",
+    category: 1,
     target_amount: 10000000.2,
-    status: "pending",
+    status: 0,
     email: "majisafi.foundation@gmail.com",
     password_digest: "password123"
 )
@@ -21,9 +21,9 @@ charities2 = Charity.create(
     name: "A worthy Cause",
     description: "Let's help end Period Poverty for females globally in need. It's a bigger issue than just affordable access to pads and period underwear.",
     amount_donated: 6000000.50,
-    category: "sanitary",
+    category: 0,
     target_amount: 10000000.2,
-    status: "pending",
+    status: 0,
     email: "worthy.cause1@gmail.com",
     password_digest: "password123"
 )
@@ -31,9 +31,9 @@ charities3 = Charity.create(
     name: "Save the Community",
     description: "Helping schools have clean pit latrines in Kenya",
     amount_donated: 950000.05,
-    category: "latrine",
+    category: 2,
     target_amount: 10000000.2,
-    status: "pending",
+    status: 0,
     email: "save.community1@gmail.com",
     password_digest: "password123"
 )
@@ -41,9 +41,9 @@ charities4 = Charity.create(
     name: "Mirror of Hope",
     description: "Mirror of Hope maintains a period bank in the community to provide a safe space to discuss menstrual health and hygiene and ensure a continous supply of sanitary towels to vulnerable girls.",
     amount_donated: 7000000.01,
-    category: "sanitary",
+    category: 0,
     target_amount: 10000000.2,
-    status: "pending",
+    status: 0,
     email: "mirror.hope@gmail.com",
     password_digest: "password123"
 )
@@ -51,9 +51,9 @@ charities5 = Charity.create(
     name: "The Red Cresent",
     description: "You can help end the water crisis and restore hope. Together we'll provide access to clean, safe and reliable water across sub-Saharan Africa - one community at a time.",
     amount_donated: 5000000.00,
-    category: "water",
+    category: 1,
     target_amount: 10000000.2,
-    status: "pending",
+    status: 0,
     email: "red.cresent@gmail.com",
     password_digest: "password123"
 )
