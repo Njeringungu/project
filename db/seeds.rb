@@ -108,8 +108,8 @@ donors1 = Donor.create(
 
     mode_of_donation: "mpesa",
 
-    status: "anonymous",
-    donate: "one-time"   
+    status: 0,
+    donate: 0   
 )
 donors2 = Donor.create(
     first_name: "lorain",
@@ -120,8 +120,8 @@ donors2 = Donor.create(
 
     mode_of_donation: "mpesa",
 
-   status: "anonymous",
-    donate: "one-time"   
+   status: 0,
+    donate: 0   
 )
 donors3 = Donor.create(
     first_name: "Janet",
@@ -132,8 +132,8 @@ donors3 = Donor.create(
 
     mode_of_donation: "mpesa",
 
-   status: "anonymous",
-    donate: "repeat"   
+   status: 0,
+    donate: 1  
 )
 donors4 = Donor.create(
     first_name: "Geoffrey",
@@ -143,9 +143,9 @@ donors4 = Donor.create(
 
     reminder: "DateTime.new(2022,11,1,17)",
     mode_of_donation: "mpesa",
-   status: "anonymous",
+   status: 0,
 
-    donate: "repeat"   
+    donate: 1   
 )
 donors5 = Donor.create(
     first_name: "gladys",
@@ -156,8 +156,8 @@ donors5 = Donor.create(
 
     mode_of_donation: "mpesa",
 
-   status: "anonymous",
-    donate: "repeat"   
+   status: 0,
+    donate: 1   
 )
 
 puts "Seeding Donations..."

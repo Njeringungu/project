@@ -63,6 +63,8 @@ def create
         render json: Donor.all
     end
 
+    
+
 def logout
     session.delete(:email)
     render json: {

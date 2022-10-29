@@ -33,7 +33,7 @@ delete '/charity/logout', to: "charities#logout"
 # application form
 # resources :forms, only: [:index, :create, :update, :show]
 get '/forms/:id', to: 'forms#show'
-put '/forms/update/:id', to: 'forms#update'
-post '/forms/application', to: "forms#create"
+put '/forms/:id', to: 'forms#update'
+post '/forms', to: "forms#create"
 get '/forms', to: "forms#index"
 end

@@ -5,7 +5,7 @@ class Charity < ApplicationRecord
     has_many :donations
     has_many :donors, through: :donations
     has_many :beneficiaries
-
+has_many :forms
 
     # validates :email, presence: true
     # validates :password, presence: true

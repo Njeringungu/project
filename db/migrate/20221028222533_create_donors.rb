@@ -8,7 +8,7 @@ class CreateDonors < ActiveRecord::Migration[7.0]
       t.datetime :reminder
       t.string :mode_of_donation
       t.integer :status
-      t.boolean :donate
+      t.integer :donate
       t.timestamps
     end
   end
