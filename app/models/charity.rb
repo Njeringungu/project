@@ -7,8 +7,8 @@ class Charity < ApplicationRecord
     has_many :beneficiaries
 
 
-    validates :email, presence: true
-    validates :password, presence: true
+    # validates :email, presence: true
+    # validates :password, presence: true
 
      enum :category, {sanitary: 0, water: 1, latrine: 2 }   
     enum :status, { pending: 0, approved: 1, rejected: 2 }

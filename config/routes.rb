@@ -4,10 +4,19 @@ Rails.application.routes.draw do
   # resources :charities
   # resources :donors
   # resources :admins
-  get '/admin', to:"admins#index"
+
+  #donor
+get '/admin', to:"admins#index"
 post '/admin/register', to: "admins#create"
 
 post '/admin/login', to: "admins#login"
 
 delete '/admin/logout', to: "admins#logout"
+#charity
+get '/charity', to:"charities#index"
+
+post '/charity/register', to: "charities#create"
+post '/charity/login', to: 'charities#login'
+
+delete '/charity/logout', to: "charities#logout"
 end
