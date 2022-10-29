@@ -25,6 +25,6 @@ def find_form
     Form.find(params[:id])
 end
     def form_params
-       params.permit(:name, :description, :category)
+       params.permit(:name, :description, :category, :charity_id)
    end
 end
