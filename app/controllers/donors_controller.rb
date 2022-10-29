@@ -62,10 +62,17 @@ def create
     
         render json: Donor.all
     end
+    def show
+donor = find_donor
+render json: donor
+    end
+    def index
+        render json: Donor.all
+    end
 
     def update
     donor = find_donor
-     form.update!(status: params[:status])
+     donor.update!(status: params[:status])
     render json: donor
 end
 

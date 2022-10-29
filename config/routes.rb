@@ -17,6 +17,7 @@ delete '/admin/logout', to: "admins#logout"
 
 Donor
 get '/donor', to:"donors#index"
+get '/donor/:id', to:"donors#show"
 post '/donor/register', to: "donors#create"
 post '/donor/login', to: 'donors#login'
 put '/donor/:id', to: 'donors#update'
