@@ -63,7 +63,11 @@ def create
         render json: Donor.all
     end
 
-    
+    def update
+    donor = find_donor
+     form.update!(status: params[:status])
+    render json: donor
+end
 
 def logout
     session.delete(:email)
@@ -73,7 +77,9 @@ def logout
 end
 
     private
-
+def find_donor
+   Donor.find(params[:id])
+end
     def donor_params
         params.permit(:email, :password, :first_name, :last_name, :password_confirmation)
     end

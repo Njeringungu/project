@@ -19,7 +19,7 @@ Donor
 get '/donor', to:"donors#index"
 post '/donor/register', to: "donors#create"
 post '/donor/login', to: 'donors#login'
-
+put '/donor/:id', to: 'donors#update'
 delete '/donor/logout', to: "donors#logout"
 
 # charity
