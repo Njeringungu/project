@@ -1,7 +1,7 @@
 class DonorsController < ApplicationController
-before_action :authorize_admin, only: [:update]
-before_action :authorize_donor
-skip_before_action :authorize_donor, only: [:create, :index]
+# before_action :authorize_admin, only: [:update]
+# before_action :authorize_donor
+# skip_before_action :authorize_donor, only: [:create, :index]
 
 
 def encode_token(payload)
