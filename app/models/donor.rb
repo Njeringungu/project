@@ -3,6 +3,6 @@ class Donor < ApplicationRecord
       has_many :charities, through: :donations
       enum :status, { anonymous: 0, identified: 1 }
       has_secure_password
-      enum :frequency, { one_time: 0, repeat: 1 }
       enum :donate, { yes: 0, no: 1 }
+      enum :frequency, { one_time: 0, repeat: 1 }
 end
