@@ -88,7 +88,7 @@ def find_donor
    Donor.find(params[:id])
 end
     def donor_params
-        params.permit(:email, :password, :first_name, :last_name, :password_confirmation)
+        params.permit(:email, :password, :first_name, :last_name, :reminder, :donate, :mode_of_donation, :status, :frequency)
     end
     
 end
