@@ -64,6 +64,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_29_082846) do
     t.datetime "reminder"
     t.string "mode_of_donation"
     t.integer "status"
+    t.integer "frequency"
     t.integer "donate"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

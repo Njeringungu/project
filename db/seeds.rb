@@ -105,7 +105,7 @@ donors1 = Donor.create(
     email: "oolouch@gmail.com",
     password_digest: "password123",
     reminder: "DateTime.new(2022,11,1,17)",
-
+frequency: 0,
     mode_of_donation: "mpesa",
 
     status: 0,
@@ -119,7 +119,7 @@ donors2 = Donor.create(
     reminder: "DateTime.new(2022,11,1,17)",
 
     mode_of_donation: "mpesa",
-
+frequency: 0,
    status: 0,
     donate: 0   
 )
@@ -131,7 +131,7 @@ donors3 = Donor.create(
     reminder: "DateTime.new(2022,11,1,17)",
 
     mode_of_donation: "mpesa",
-
+frequency: 0,
    status: 0,
     donate: 1  
 )
@@ -144,7 +144,7 @@ donors4 = Donor.create(
     reminder: "DateTime.new(2022,11,1,17)",
     mode_of_donation: "mpesa",
    status: 0,
-
+frequency: 1,
     donate: 1   
 )
 donors5 = Donor.create(
@@ -155,7 +155,7 @@ donors5 = Donor.create(
     reminder: "DateTime.new(2022,11,1,17)",
 
     mode_of_donation: "mpesa",
-
+frequency: 1,
    status: 0,
     donate: 1   
 )
