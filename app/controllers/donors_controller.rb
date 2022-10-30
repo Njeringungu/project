@@ -72,7 +72,7 @@ render json: donor
 
     def update
     donor = find_donor
-     donor.update!(status: params[:status])
+     donor.update!(donor_params)
     render json: donor
 end
 
@@ -88,7 +88,7 @@ def find_donor
    Donor.find(params[:id])
 end
     def donor_params
-        params.permit(:email, :password, :first_name, :last_name, :reminder, :donate, :mode_of_donation, :status, :frequency)
+        params.permit(:email, :password, :first_name, :last_name, :reminder, :donate, :mode_of_donation, :frequency, :status )
     end
     
 end
