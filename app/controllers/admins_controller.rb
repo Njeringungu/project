@@ -2,7 +2,7 @@ class AdminsController < ApplicationController
     
 
 before_action :authorize_admin
-skip_before_action :authorize_admin, only: [:create, :index]
+
 
 
 def encode_token(payload)
