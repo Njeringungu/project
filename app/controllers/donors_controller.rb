@@ -1,5 +1,5 @@
 class DonorsController < ApplicationController
-before_action :authorize_admin, only: [:update]
+
 before_action :authorize_donor
 
 

@@ -2,7 +2,7 @@ class ApplicationController < ActionController::API
     
     
 
-before_action :authorize_admin
+# before_action :authorize_admin
 
 
 
