@@ -1,6 +1,6 @@
 class CharitiesController < ApplicationController
 
-   before_action :authorize_charity
+#    before_action :authorize_charity
 
 
 
