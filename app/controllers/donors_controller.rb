@@ -1,7 +1,7 @@
 class DonorsController < ApplicationController
 
 before_action :authorize_donor
-
+skip_before_action :authorize_charity, only: [:create]
 
 
 def encode_token(payload)
