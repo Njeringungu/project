@@ -22,7 +22,7 @@ post '/donor/register', to: "donors#create"
 post '/donor/login', to: 'donors#login'
 put '/donor/:id', to: 'donors#update'
 delete '/donor/logout', to: "donors#logout"
-
+resources :donations, only: [:index, :create, :show]
 # charity
 get '/charity', to:"charities#index"
 
