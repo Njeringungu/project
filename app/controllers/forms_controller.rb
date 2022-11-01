@@ -1,7 +1,7 @@
 class FormsController < ApplicationController
-before_action :authorize_admin, only: [:update]
-before_action :authorize_admin
-skip_before_action :authorize_charity, only: [:create, :index]
+# before_action :authorize_admin, only: [:update]
+# before_action :authorize_admin
+# skip_before_action :authorize_charity, only: [:create, :index]
 
 
 
