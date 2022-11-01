@@ -1,7 +1,7 @@
 class CharitiesController < ApplicationController
 
-#    before_action :authorize_charity
-# skip_before_action :authorize_charity, only: [:create]
+   before_action :authorize_charity
+skip_before_action :authorize_charity, only: [:create]
 
 
 
