@@ -1,2 +1,2 @@
-class ReminderMailer < ApplicationMailer
-end
+# class ReminderMailer < ApplicationMailer
+# end
