@@ -20,15 +20,16 @@ get '/donor', to:"donors#index"
 get '/donor/:id', to:"donors#show"
 post '/donor/register', to: "donors#create"
 post '/donor/login', to: 'donors#login'
-put '/donor/:id', to: 'donors#update'
+patch '/donor/:id', to: 'donors#update'
 delete '/donor/logout', to: "donors#logout"
 
 # charity
 get '/charity', to:"charities#index"
+get '/charity/:id', to:"charities#show"
 
 post '/charity/register', to: "charities#create"
 post '/charity/login', to: 'charities#login'
-post '/charity/application', to: "charities#application"
+patch '/charity/application', to: "charities#application"
 delete '/charity/logout', to: "charities#logout"
 
 # application form

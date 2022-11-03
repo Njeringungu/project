@@ -56,11 +56,24 @@ end
    end
 
    def index
-    
         render json: Charity.all
     end
+    def show
+        charity = Charity.find(params[:id])
+        render json: charity
+            end
 
+def application
+    charity = Charity.find_by(id: params[:id])
+    if charity.nil?
+        render json:  { error: 'user not found' }
 
+    else
+        
+    charity.update!(charity_params)
+    render json: charity
+    end
+end
 
  def logout
     session.delete(:email)
@@ -71,7 +84,7 @@ end
 
    private
    def charity_params
-       params.permit(:email, :password, :name, :description, :amount_donated, :target_amount)
+       params.permit(:email, :password, :name, :description, :amount_donated, :approved)
    end
   
 end

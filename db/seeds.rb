@@ -15,7 +15,9 @@ charities1 = Charity.create(
     target_amount: 10000000.2,
     status: 0,
     email: "majisafi.foundation@gmail.com",
-    password_digest: "password123"
+    password_digest: "password123",
+    approved: false
+
 )
 charities2 = Charity.create(
     name: "A worthy Cause",
@@ -25,7 +27,8 @@ charities2 = Charity.create(
     target_amount: 10000000.2,
     status: 0,
     email: "worthy.cause1@gmail.com",
-    password_digest: "password123"
+    password_digest: "password123",
+    approved: false
 )
 charities3 = Charity.create(
     name: "Save the Community",
@@ -35,7 +38,9 @@ charities3 = Charity.create(
     target_amount: 10000000.2,
     status: 0,
     email: "save.community1@gmail.com",
-    password_digest: "password123"
+    password_digest: "password123",
+    approved: true
+
 )
 charities4 = Charity.create(
     name: "Mirror of Hope",
@@ -45,7 +50,9 @@ charities4 = Charity.create(
     target_amount: 10000000.2,
     status: 0,
     email: "mirror.hope@gmail.com",
-    password_digest: "password123"
+    password_digest: "password123",
+    approved: true
+
 )
 charities5 = Charity.create(
     name: "The Red Cresent",
@@ -55,7 +62,9 @@ charities5 = Charity.create(
     target_amount: 10000000.2,
     status: 0,
     email: "red.cresent@gmail.com",
-    password_digest: "password123"
+    password_digest: "password123",
+    approved: false
+
 )
 puts "Seeding Beneficiary..."
 

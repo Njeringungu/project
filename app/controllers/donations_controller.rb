@@ -18,8 +18,6 @@ class DonationsController < ApplicationController
 
     private
 
-
-
     def donation_params
      params.permit(:amount, :charity_id, :donor_id)
     end
